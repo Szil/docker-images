@@ -1,6 +1,9 @@
 # Docker Images from Oracle
 This repository contains [Dockerfiles](https://docs.docker.com/engine/reference/builder/) and samples to build [Docker](https://www.docker.com/what-docker) images for Oracle commercial products and [Oracle sponsored open source projects](https://oss.oracle.com).
 
+## Changes
+ - [Oracle Database](/OracleDatabase/SingleInstance/19.3.0): Can be installed without Container Database option.
+
 ## Images on GitHub
 These images will require you to download any required Oracle commercial software before installation. If you want commercial software downloaded for you, view [Pre-Built Images with Commercial Software](#pre-built-images-with-commercial-software).
 

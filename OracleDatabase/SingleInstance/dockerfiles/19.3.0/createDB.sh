@@ -7,7 +7,7 @@
 # Author: gerald.venzl@oracle.com
 # Description: Creates an Oracle Database based on following parameters:
 #              $ORACLE_SID: The Oracle SID and CDB name
-#              $ORACLE_PDB: The PDB name
+#              $ORACLE_PDB: The PDB name !!!NOT USED!!!
 #              $ORACLE_PWD: The Oracle password
 # 
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
@@ -78,7 +78,6 @@ echo "$ORACLE_PDB=
 sqlplus / as sysdba << EOF
    ALTER SYSTEM SET control_files='$ORACLE_BASE/oradata/$ORACLE_SID/control01.ctl' scope=spfile;
    ALTER SYSTEM SET local_listener='';
-   ALTER PLUGGABLE DATABASE $ORACLE_PDB SAVE STATE;
    EXEC DBMS_XDB_CONFIG.SETGLOBALPORTENABLED (TRUE);
    exit;
 EOF
